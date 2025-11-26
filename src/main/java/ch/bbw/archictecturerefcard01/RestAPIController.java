@@ -15,7 +15,7 @@ public class RestAPIController {
         Message message = new Message("Application Ref. Card 01 - API hello");
         try {
             String serverIp = InetAddress.getLocalHost().getHostAddress();
-            message.setText(message.getText() + " - Server IP Address: " + serverIp);
+            message.setText(message.getText() + " - Server IP-Address: " + serverIp);
         } catch(Exception e) {
         }
         return ResponseEntity.ok(new Message());
